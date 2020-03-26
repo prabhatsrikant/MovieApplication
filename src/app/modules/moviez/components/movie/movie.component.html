@@ -1,0 +1,23 @@
+
+<label class="label">Search Movie</label>
+  <input (keyup)="onKey($event)" class="input">
+
+<div class = "panel-group">
+    <div class="panel panel-default"
+      *ngFor = 'let movie of movies'>
+      <div class="panel-heading">{{movie.title}}</div>
+      <div class="panel-body">
+          {{movie.director}}
+          {{movie.year}}
+        <button type="button" 
+            (click)="addToCart(movie)" >Add</button> 
+         </div>
+
+    </div>
+</div>
+
+
+
+<!-- <div *ngFor = 'let movie of movies'>
+    {{movie.title}} || {{movie.director}} || {{movie.year}}
+    </div> -->

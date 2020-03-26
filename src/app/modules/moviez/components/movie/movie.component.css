@@ -1,0 +1,17 @@
+
+.panel-default{
+    background-color: burlywood;
+    width: 20vw;
+    height: 13vh;
+    text-align: center;
+    border: black;
+    
+}
+
+.panel-heading{
+    font-size: medium;
+}
+
+.panel-body{
+    font-size: small;
+}
